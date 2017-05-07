@@ -1,0 +1,66 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+[
+  {distance: 1, scheduled_at: '2017-04-25 20:30:00', completed_at: '2017-04-25 20:42:00'},
+  {distance: 1, scheduled_at: '2017-04-26 20:30:00', completed_at: '2017-04-26 20:42:00'},
+  {distance: 1, scheduled_at: '2017-04-27 20:30:00', completed_at: '2017-04-27 20:42:00'},
+  {distance: 1, scheduled_at: '2017-04-28 20:30:00', completed_at: nil},
+  {distance: 1, scheduled_at: '2017-04-29 20:30:00', completed_at: '2017-04-29 20:42:00'},
+  {distance: 1, scheduled_at: '2017-04-30 20:30:00', completed_at: '2017-04-30 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-01 20:30:00', completed_at: '2017-05-01 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-02 20:30:00', completed_at: '2017-05-02 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-03 20:30:00', completed_at: '2017-05-03 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-04 20:30:00', completed_at: '2017-05-04 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-05 20:30:00', completed_at: '2017-05-05 20:42:00'},
+  {distance: 1, scheduled_at: '2017-05-06 20:30:00', completed_at: '2017-05-06 20:42:00'},
+  {distance: 3, scheduled_at: '2017-05-07 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-08 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-09 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-10 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-11 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-12 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-13 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-14 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-15 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-16 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-17 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-18 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-19 20:30:00', completed_at: nil},
+  {distance: 2, scheduled_at: '2017-05-20 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-21 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-22 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-23 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-24 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-25 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-26 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-27 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-28 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-29 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-30 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-05-31 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-06-01 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-06-02 20:30:00', completed_at: nil},
+  {distance: 3, scheduled_at: '2017-06-03 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-04 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-05 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-06 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-07 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-08 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-09 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-10 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-11 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-12 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-13 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-14 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-15 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-16 20:30:00', completed_at: nil},
+  {distance: 4, scheduled_at: '2017-06-17 20:30:00', completed_at: nil},
+].each do |workout|
+  Workout.create(workout)
+end

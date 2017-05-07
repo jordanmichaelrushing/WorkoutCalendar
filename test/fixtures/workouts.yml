@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distance: 1
+  scheduled_at: 2017-05-06 22:15:17
+  completed_at: 2017-05-06 22:15:17
+
+two:
+  distance: 1
+  scheduled_at: 2017-05-06 22:15:17
+  completed_at: 2017-05-06 22:15:17
