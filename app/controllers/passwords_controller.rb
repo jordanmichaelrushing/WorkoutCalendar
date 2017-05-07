@@ -11,7 +11,7 @@ class PasswordsController < ApplicationController
   def verify
     if params[:password] == ENV['PASSWORDPROTECTED']
       session[:verified] = true
-      redirect_to today_workouts
+      redirect_to today_workouts_path
     else
       render :file => "#{Rails.root}/public/404.html",  :status => 404, layout: false
     end
