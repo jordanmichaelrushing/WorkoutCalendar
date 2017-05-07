@@ -18,7 +18,7 @@ h0 {font-size:1000%;}
 h15 {font-size:800%;}
 h25 {font-size:400%;}
 .btn-xl {font-size:500%;margin-top: -25px;}
-form > .btn-xl {font-size:75%;}
+h0 > form > .btn-xl {font-size:75%;}
 #password {
   font-size: 50px;
   padding: 10px;
@@ -38,7 +38,7 @@ form {
     font-size:54px;
     margin-top: 20px;
   }
-  form > .btn-xl {font-size:55%;}
+  h0 > form > .btn-xl {font-size:55%;}
   #password {
     font-size: 25px;
     margin: 0;
@@ -50,5 +50,5 @@ form {
   h15 {font-size:50px;}
   h25 {font-size:35px;}
   .btn-xl {font-size:45px;margin-top:20px;}
-  form > .btn-xl {font-size:60%;}
+  h0 > form > .btn-xl {font-size:60%;}
 }
