@@ -4,7 +4,7 @@ class PasswordsController < ApplicationController
     if session[:verified] == true
       redirect_to today_workouts_path
     else
-      render 'index', layout: false
+      render 'index'
     end
   end
 

@@ -1,13 +1,13 @@
 %h0.text-center
   = @workout.distance.to_s + ' ' + t('workout.miles', count: @workout.distance)
-.span
-  - if @workout.completed?
-    %h15.text-center
-      Completed!
-  - else
+  - if !@workout.completed?
     = form_for @workout do |w|
       = w.hidden_field :completed_at, value: DateTime.now
       = w.submit 'Completed?', class: 'btn btn-xl btn-success'
+- if @workout.completed?
+  .span
+    %h15.text-center
+      Completed!
 .span
   %h15.text-center
     Total Miles Run:

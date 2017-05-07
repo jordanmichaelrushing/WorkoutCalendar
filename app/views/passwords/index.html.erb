@@ -1,4 +1,4 @@
-<%= form_tag '/password_protected' do |f| %>
-  <%= text_field_tag :password, '', placeholder: 'Password' %>
-  <%= submit_tag 'Submit' %>
+<%= form_tag '/password_protected' do %>
+  <%= password_field_tag :password, '', placeholder: 'Password', class: '' %>
+  <%= submit_tag 'Submit', class: 'btn btn-xl btn-success' %>
 <% end %>

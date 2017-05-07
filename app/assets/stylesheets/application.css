@@ -17,18 +17,38 @@
 h0 {font-size:1000%;}
 h15 {font-size:800%;}
 h25 {font-size:400%;}
-.btn-xl {font-size:500%;}
+.btn-xl {font-size:500%;margin-top: -25px;}
+form > .btn-xl {font-size:75%;}
+#password {
+  font-size: 50px;
+  padding: 10px;
+  margin: 50px auto 0;
+}
+form {
+  padding-top: 20px;
+  text-align: center;
+  display: inline-block;
+}
 @media screen and (max-device-width : 1204px)
 {
   h0 {font-size:100px;}
   h15 {font-size:50px;}
   h25 {font-size:30px;}
-  .btn-xl {font-size:54px;}
+  .btn-xl {
+    font-size:54px;
+    margin-top: 20px;
+  }
+  form > .btn-xl {font-size:55%;}
+  #password {
+    font-size: 25px;
+    margin: 0;
+  }
 }
 @media screen and (max-device-width : 320px)
 {
   h0 {font-size:80px;}
   h15 {font-size:50px;}
   h25 {font-size:35px;}
-  .btn-xl {font-size:45px;}
+  .btn-xl {font-size:45px;margin-top:20px;}
+  form > .btn-xl {font-size:60%;}
 }
