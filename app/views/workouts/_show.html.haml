@@ -24,10 +24,10 @@
 
 .span
   - if @prev
-    = link_to "Prev", @prev, class: 'btn btn-lg btn-default pull-left mar-left'
+    = link_to "Prev", @prev, class: 'btn btn-lg btn-default pull-left'
   - else
-    = content_tag :span, "Prev", class: 'btn btn-lg btn-default pull-left mar-left'
+    = content_tag :span, "Prev", class: 'btn btn-lg btn-default pull-left'
   - if @next
-    = link_to "Next", @next, class: 'btn btn-lg btn-default pull-right mar-right'
+    = link_to "Next", @next, class: 'btn btn-lg btn-default pull-right'
   - else
-    = content_tag :span, "Next", class: 'btn btn-lg btn-default pull-right mar-right'
+    = content_tag :span, "Next", class: 'btn btn-lg btn-default pull-right'

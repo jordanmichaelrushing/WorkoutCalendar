@@ -31,9 +31,9 @@ form {
 }
 @media screen and (max-device-width : 1204px)
 {
-  h0 {font-size:100px;}
-  h15 {font-size:50px;}
-  h25 {font-size:30px;}
+  h0 {font-size:450%;}
+  h15 {font-size:300%;}
+  h25 {font-size:200%;}
   .btn-xl {
     font-size:54px;
     margin-top: 20px;
@@ -46,9 +46,9 @@ form {
 }
 @media screen and (max-device-width : 320px)
 {
-  h0 {font-size:80px;}
-  h15 {font-size:50px;}
-  h25 {font-size:35px;}
+  h0 {font-size:400%;}
+  h15 {font-size:250%;}
+  h25 {font-size:150%;}
   .btn-xl {font-size:45px;margin-top:20px;}
   h0 > form > .btn-xl {font-size:60%;}
 }
