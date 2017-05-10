@@ -17,6 +17,7 @@
 h0 {font-size:900%;}
 h15 {font-size:800%;}
 h25 {font-size:400%;}
+h35 {font-size:135%;}
 .btn-xl {font-size:500%;margin-top: -25px;}
 h0 > form > .btn-xl {font-size:75%;}
 #password {
@@ -29,6 +30,7 @@ form {
   text-align: center;
   display: inline-block;
 }
+#workout_miles_run {width:18%;}
 @media screen and (max-device-width : 1204px)
 {
   h0 {font-size:450%;}
@@ -43,6 +45,8 @@ form {
     font-size: 25px;
     margin: 0;
   }
+  #workout_miles_run {width: 40%;}
+  h35 {font-size:65%;}
 }
 @media screen and (max-device-width : 320px)
 {
@@ -51,4 +55,5 @@ form {
   h25 {font-size:150%;}
   .btn-xl {font-size:45px;margin-top:20px;}
   h0 > form > .btn-xl {font-size:60%;}
+  h35 {font-size:75%;}
 }

@@ -1,26 +1,22 @@
 %h0.text-center
-  = @workout.distance.to_s + ' ' + t('workout.miles', count: @workout.distance)
   - if !@workout.completed?
     = form_for @workout do |w|
       = w.hidden_field :completed_at, value: DateTime.now
+      = w.number_field :miles_run, value: @workout.miles_scheduled, step: 0.01, min: 0
+      %miles
+        Miles
       = w.submit 'Completed?', class: 'btn btn-xl btn-success'
   - else
+    = @workout.miles_run.to_s + ' ' + t('workout.miles', count: @workout.miles_run)
     Completed!
 .span
   %h25.text-center
     = @workout.scheduled_at.to_date
 .span
-  %h15.text-center
-    Total Run:
-    = @worked_out_distance
-.span
-  %h15.text-center
-    Total Miles:
-    = @workouts_distance
-.span
   %h25.text-center
-    Percentage Complete:
-    = "#{((@worked_out_distance / @workouts_distance.to_f) * 100).round(2)}%"
+    Completed:
+    %h35
+      = "#{((@worked_out_distance / @workouts_distance.to_f) * 100).round(2)}% (#{@worked_out_distance} / #{@workouts_distance})"
 
 .span
   - if @prev

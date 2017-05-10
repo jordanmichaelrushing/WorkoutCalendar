@@ -5,16 +5,16 @@ class WorkoutsController < ApplicationController
     @next = Workout.find_by("DATE(scheduled_at) = (CURDATE() + INTERVAL 1 DAY)")
 
     if @workout.nil?
-      d = Workout.last.distance
-      d += 1 if Workout.where(distance: d).count < 14
+      d = Workout.last.miles_scheduled
+      d += 1 if Workout.where(miles_scheduled: d).count < 14
       @workout = Workout.create(
-        distance: d,
+        miles_scheduled: d,
         scheduled_at: Date.today.strftime + ' 20:30:00'
       )
     end
 
-    @worked_out_distance = Workout.where.not(completed_at: nil).pluck(:distance).sum
-    @workouts_distance = Workout.all.pluck(:distance).sum
+    @worked_out_distance = Workout.where.not(completed_at: nil).pluck(:miles_run).sum
+    @workouts_distance = Workout.all.pluck(:miles_scheduled).sum
   end
 
   def show
@@ -22,8 +22,8 @@ class WorkoutsController < ApplicationController
     @prev = @workout.prev
     @next = @workout.next
 
-    @worked_out_distance = Workout.where.not(completed_at: nil).pluck(:distance).sum
-    @workouts_distance = Workout.all.pluck(:distance).sum
+    @worked_out_distance = Workout.where.not(completed_at: nil).pluck(:miles_run).sum
+    @workouts_distance = Workout.all.pluck(:miles_scheduled).sum
   end
 
   def update
