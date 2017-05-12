@@ -35,6 +35,6 @@ class WorkoutsController < ApplicationController
   private
 
   def workout_params
-    params.require(:workout).permit(:completed_at)
+    params.require(:workout).permit(:completed_at, :miles_run)
   end
 end
