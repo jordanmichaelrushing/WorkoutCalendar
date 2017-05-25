@@ -1,15 +1,18 @@
 class WorkoutsController < ApplicationController
   def today
-    @workout = Workout.find_by("DATE(scheduled_at) = CURDATE()")
-    @prev = Workout.find_by("DATE(scheduled_at) = SUBDATE(CURDATE(),1)")
-    @next = Workout.find_by("DATE(scheduled_at) = (CURDATE() + INTERVAL 1 DAY)")
+    todays_run_time = Time.zone.now.to_date.strftime + ' 20:30:00'
+    beg_of_day = Time.zone.now.beginning_of_day + 7.hours
+    end_of_day = Time.zone.now.end_of_day + 7.hours
+    @workout = Workout.find_by("scheduled_at >= ? and scheduled_at <= ?", beg_of_day, end_of_day)
+    @prev = Workout.find_by("scheduled_at >= ? and scheduled_at <= ?", beg_of_day + 1.day, end_of_day + 1.day)
+    @next = Workout.find_by("scheduled_at >= ? and scheduled_at <= ?", beg_of_day + 1.day, end_of_day + 1.day)
 
     if @workout.nil?
       d = Workout.last.miles_scheduled
-      d += 1 if Workout.where(miles_scheduled: d).count < 14
+      d += 1 if Workout.where(miles_scheduled: d).count == 14
       @workout = Workout.create(
         miles_scheduled: d,
-        scheduled_at: Date.today.strftime + ' 20:30:00'
+        scheduled_at: todays_run_time
       )
     end
 
